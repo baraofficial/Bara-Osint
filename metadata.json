@@ -1,0 +1,6 @@
+{
+  "name": "BARAOSINT - Public Data Intel",
+  "description": "Platform OSINT dan intelijen data publik lengkap: Cyber Patrol, Karhutla Live, CCTV Publik Indonesia, Cek Plat Nomor, dan Recon Tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

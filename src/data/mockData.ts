@@ -1,0 +1,212 @@
+export const CYBER_STATS = {
+  totalAncaman: '3.780',
+  phishing: '890',
+  malware: '350',
+  skorRisiko: '7.100',
+  serverDipetakan: '92',
+  serverTotal: '3.780 IP unik',
+};
+
+export const RECENT_THREATS = [
+  {
+    name: 'Vidar',
+    type: 'Stealer',
+    status: 'high',
+    url: 'http://89.24.197.32/sys/vid',
+    timestamp: '10-04, 17:40',
+    tag: 'RedLine',
+  },
+  {
+    name: 'Silver',
+    type: 'Bot',
+    status: 'medium',
+    url: '185.196.8.221:8080',
+    timestamp: '10-04, 17:34',
+    tag: 'C2 Node',
+  },
+  {
+    name: 'Redline',
+    type: 'Malware',
+    status: 'high',
+    url: 'http://194.87.69.183/token/payload',
+    timestamp: '10-04, 17:20',
+    tag: 'CredStealer',
+  },
+  {
+    name: 'Amadey',
+    type: 'Botnet',
+    status: 'low',
+    url: 'http://iframe77.com/auth/login.php',
+    timestamp: '10-04, 16:55',
+    tag: 'Loader',
+  },
+  {
+    name: 'Cobalt Strike',
+    type: 'Beacon',
+    status: 'high',
+    url: '45.142.214.90:443',
+    timestamp: '10-04, 16:30',
+    tag: 'Malleable C2',
+  },
+  {
+    name: 'AsyncRAT',
+    type: 'Trojan',
+    status: 'medium',
+    url: 'dns.dynamic-update.org:7707',
+    timestamp: '10-04, 15:48',
+    tag: 'Persistence',
+  },
+];
+
+export const ATTACK_LOGS = [
+  { time: '17:42:01', sourceIp: '185.220.101.5', destIp: '103.247.12.88', port: '443', country: 'RU -> ID', attack: 'SSH Bruteforce', action: 'BLOCKED' },
+  { time: '17:41:40', sourceIp: '45.154.255.89', destIp: '202.158.40.12', port: '80', country: 'NL -> ID', attack: 'SQLi Injection', action: 'FILTERED' },
+  { time: '17:40:12', sourceIp: '194.26.29.112', destIp: '36.88.190.201', port: '8080', country: 'DE -> ID', attack: 'Vidar Stealer C2', action: 'ALERTED' },
+  { time: '17:38:55', sourceIp: '91.240.118.17', destIp: '118.99.110.4', port: '22', country: 'UA -> ID', attack: 'Port Scanning', action: 'DROPPED' },
+  { time: '17:35:19', sourceIp: '103.14.26.19', destIp: '180.252.164.21', port: '445', country: 'VN -> ID', attack: 'SMB Exploit Attempt', action: 'BLOCKED' },
+];
+
+export const KARHUTLA_STATS = {
+  totalTahunIni: '92.141',
+  hariIni: '120',
+  resikoTinggi: '4.864',
+  nominalTinggi: '89.512 nominal',
+  rendah: '6.745 rendah',
+};
+
+export const KARHUTLA_REGIONS = [
+  { name: 'Semua', count: '92.241', pct: 100 },
+  { name: 'Kalimantan', count: '52.880', pct: 57, sub: 'FRP 2.302,1 MW' },
+  { name: 'Asia Tenggara', count: '18.162', pct: 20, sub: 'FRP 357,0 MW' },
+  { name: 'Papua', count: '8.460', pct: 9, sub: 'FRP 181,2 MW' },
+  { name: 'Sumatera', count: '7.810', pct: 8, sub: 'FRP 417,6 MW' },
+  { name: 'Sulawesi', count: '3.110', pct: 4, sub: 'FRP 98,3 MW' },
+  { name: 'Bali & Nusa Tenggara', count: '1.819', pct: 2, sub: 'FRP 54,1 MW' },
+];
+
+export const CCTV_PORTALS: { province: string; items: { name: string; city: string; active?: boolean }[] }[] = [
+  {
+    province: 'ACEH',
+    items: [{ name: 'CCTV Banda Aceh', city: 'Banda Aceh', active: true }],
+  },
+  {
+    province: 'BALI',
+    items: [
+      { name: 'ATCS Denpasar', city: 'Denpasar', active: true },
+      { name: 'Bali Satu Data CCTV', city: 'Bali', active: true },
+    ],
+  },
+  {
+    province: 'BANTEN',
+    items: [
+      { name: 'CCTV Tangerang', city: 'Tangerang', active: true },
+      { name: 'CCTV Serang', city: 'Serang', active: true },
+      { name: 'CCTV Banten Provinsi', city: 'Banten', active: true },
+    ],
+  },
+  {
+    province: 'DI YOGYAKARTA',
+    items: [
+      { name: 'CCTV Jogja Kota', city: 'Yogyakarta', active: true },
+      { name: 'CCTV DIY Provinsi', city: 'Yogyakarta', active: true },
+      { name: 'Sleman 24 Jam', city: 'Sleman', active: true },
+      { name: 'Bantul CCTV', city: 'Bantul', active: true },
+    ],
+  },
+  {
+    province: 'DKI JAKARTA',
+    items: [
+      { name: 'ATCS Jakarta Maps', city: 'Jakarta - DLLAJ DKI', active: true },
+      { name: 'Smart City Jakarta', city: 'Jakarta Pusat', active: true },
+    ],
+  },
+  {
+    province: 'JAWA BARAT',
+    items: [
+      { name: 'ATCS Bandung', city: 'Bandung', active: true },
+      { name: 'ATCS Bandung Barat', city: 'Bandung Barat', active: true },
+      { name: 'Bogor Smart City CCTV', city: 'Bogor', active: true },
+      { name: 'ATCS Cianjur', city: 'Cianjur', active: true },
+      { name: 'CCTV Cirebon', city: 'Cirebon', active: true },
+      { name: 'ATCS Ciamis', city: 'Ciamis', active: true },
+      { name: 'ATCS Sumedang', city: 'Sumedang', active: true },
+      { name: 'ATCS Tasikmalaya', city: 'Tasikmalaya', active: true },
+      { name: 'Smart City Cimahi CCTV', city: 'Cimahi', active: true },
+      { name: 'CCTV Indramayu', city: 'Indramayu', active: true },
+      { name: 'CCTV Kuningan', city: 'Kuningan', active: true },
+      { name: 'CCTV Bekasi', city: 'Bekasi Kota/Kabupaten', active: true },
+    ],
+  },
+  {
+    province: 'JAWA TENGAH',
+    items: [
+      { name: 'Pantau Semarang', city: 'Semarang', active: true },
+      { name: 'CCTV Purbalingga', city: 'Purbalingga', active: true },
+      { name: 'CCTV Salatiga', city: 'Salatiga', active: true },
+      { name: 'ATCS Magelang', city: 'Magelang', active: true },
+      { name: 'CCTV Surakarta', city: 'Surakarta / Solo', active: true },
+    ],
+  },
+  {
+    province: 'JAWA TIMUR',
+    items: [
+      { name: 'CCTV Surabaya SITS', city: 'Surabaya', active: true },
+      { name: 'ATCS Malang', city: 'Malang', active: true },
+      { name: 'CCTV Kota Kediri', city: 'Kediri', active: true },
+      { name: 'ATCS Madiun', city: 'Madiun', active: true },
+    ],
+  },
+];
+
+export const PLAT_DATABASE: Record<string, { wilayah: string; sub: string; provinsi: string }> = {
+  B: { wilayah: 'Jakarta, Depok, Tangerang, Bekasi', sub: 'Polda Metro Jaya', provinsi: 'DKI Jakarta / Jabar / Banten' },
+  D: { wilayah: 'Kota & Kab. Bandung, Cimahi', sub: 'Bandung Raya', provinsi: 'Jawa Barat' },
+  F: { wilayah: 'Bogor, Cianjur, Sukabumi', sub: 'Karesidenan Bogor', provinsi: 'Jawa Barat' },
+  E: { wilayah: 'Cirebon, Indramayu, Majalengka, Kuningan', sub: 'Karesidenan Cirebon', provinsi: 'Jawa Barat' },
+  Z: { wilayah: 'Garut, Tasikmalaya, Ciamis, Banjar, Pangandaran', sub: 'Priangan Timur', provinsi: 'Jawa Barat' },
+  T: { wilayah: 'Purwakarta, Karawang, Subang', sub: 'Purwasuka', provinsi: 'Jawa Barat' },
+  N: { wilayah: 'Malang, Probolinggo, Pasuruan, Lumajang, Batu', sub: 'Karesidenan Malang', provinsi: 'Jawa Timur' },
+  L: { wilayah: 'Kota Surabaya', sub: 'Surabaya Pusat / Timur / Selatan / Barat / Utara', provinsi: 'Jawa Timur' },
+  W: { wilayah: 'Sidoarjo, Gresik', sub: 'Gerbangkertosusila', provinsi: 'Jawa Timur' },
+  M: { wilayah: 'Madura (Bangkalan, Sampang, Pamekasan, Sumenep)', sub: 'Pulau Madura', provinsi: 'Jawa Timur' },
+  P: { wilayah: 'Besuki (Jember, Banyuwangi, Bondowoso, Situbondo)', sub: 'Karesidenan Besuki', provinsi: 'Jawa Timur' },
+  AG: { wilayah: 'Kediri, Blitar, Tulungagung, Trenggalek, Nganjuk', sub: 'Karesidenan Kediri', provinsi: 'Jawa Timur' },
+  AE: { wilayah: 'Madiun, Ngawi, Magetan, Ponorogo, Pacitan', sub: 'Karesidenan Madiun', provinsi: 'Jawa Timur' },
+  S: { wilayah: 'Bojonegoro, Tuban, Lamongan, Mojokerto, Jombang', sub: 'Karesidenan Bojonegoro', provinsi: 'Jawa Timur' },
+  H: { wilayah: 'Kota & Kab. Semarang, Salatiga, Kendal, Demak', sub: 'Semarang Raya', provinsi: 'Jawa Tengah' },
+  AD: { wilayah: 'Surakarta / Solo, Sukoharjo, Boyolali, Klaten, Wonogiri, Karanganyar, Sragen', sub: 'Solo Raya', provinsi: 'Jawa Tengah' },
+  AB: { wilayah: 'Kota Yogyakarta, Sleman, Bantul, Gunungkidul, Kulon Progo', sub: 'DIY Yogyakarta', provinsi: 'DI Yogyakarta' },
+  K: { wilayah: 'Pati, Kudus, Jepara, Rembang, Blora, Grobogan', sub: 'Karesidenan Pati', provinsi: 'Jawa Tengah' },
+  AA: { wilayah: 'Magelang, Purworejo, Temanggung, Wonosobo, Kebumen', sub: 'Kedu', provinsi: 'Jawa Tengah' },
+  R: { wilayah: 'Banyumas, Cilacap, Purwokerto, Purbalingga, Banjarnegara', sub: 'Banyumas Raya', provinsi: 'Jawa Tengah' },
+  G: { wilayah: 'Pekalongan, Tegal, Brebes, Batang, Pemalang', sub: 'Karesidenan Pekalongan', provinsi: 'Jawa Tengah' },
+  DK: { wilayah: 'Denpasar, Badung, Gianyar, Tabanan, Buleleng, Klungkung, Bangli, Karangasem, Jembrana', sub: 'Pulau Dewata', provinsi: 'Bali' },
+  BK: { wilayah: 'Medan, Deli Serdang, Binjai, Karo, Langkat, Tebing Tinggi, Asahan', sub: 'Sumatera Utara Pantai Timur', provinsi: 'Sumatera Utara' },
+  BB: { wilayah: 'Tapanuli, Sibolga, Padangsidimpuan, Nias', sub: 'Sumatera Utara Pantai Barat', provinsi: 'Sumatera Utara' },
+  BA: { wilayah: 'Padang, Bukittinggi, Pariaman, Solok, Payakumbuh', sub: 'Minangkabau', provinsi: 'Sumatera Barat' },
+  BM: { wilayah: 'Pekanbaru, Dumai, Kampar, Siak, Bengkalis, Indragiri', sub: 'Riau Daratan', provinsi: 'Riau' },
+  BP: { wilayah: 'Batam, Tanjungpinang, Bintan, Karimun, Natuna', sub: 'Kepulauan Riau', provinsi: 'Kepulauan Riau' },
+  BG: { wilayah: 'Palembang, Ogan Ilir, Banyuasin, Musi, Prabumulih', sub: 'Sumatera Selatan', provinsi: 'Sumatera Selatan' },
+  BE: { wilayah: 'Bandar Lampung, Metro, Lampung Selatan, Lampung Tengah', sub: 'Lampung', provinsi: 'Lampung' },
+  BD: { wilayah: 'Bengkulu, Rejang Lebong, Bengkulu Utara', sub: 'Bengkulu', provinsi: 'Bengkulu' },
+  BH: { wilayah: 'Jambi, Muaro Jambi, Batanghari, Bungo, Merangin, Kerinci', sub: 'Jambi', provinsi: 'Jambi' },
+  BN: { wilayah: 'Pangkal Pinang, Bangka, Belitung', sub: 'Bangka Belitung', provinsi: 'Kep. Bangka Belitung' },
+  KB: { wilayah: 'Pontianak, Singkawang, Sambas, Ketapang, Sintang', sub: 'Kalimantan Barat', provinsi: 'Kalimantan Barat' },
+  DA: { wilayah: 'Banjarmasin, Banjarbaru, Martapura, Barito Kuala, Tanah Laut', sub: 'Kalimantan Selatan', provinsi: 'Kalimantan Selatan' },
+  KH: { wilayah: 'Palangka Raya, Kotawaringin, Kapuas, Barito', sub: 'Kalimantan Tengah', provinsi: 'Kalimantan Tengah' },
+  KT: { wilayah: 'Balikpapan, Samarinda, Kutai Kartanegara, Bontang', sub: 'Kalimantan Timur', provinsi: 'Kalimantan Timur' },
+  KU: { wilayah: 'Tarakan, Nunukan, Malinau, Bulungan', sub: 'Kalimantan Utara', provinsi: 'Kalimantan Utara' },
+  DB: { wilayah: 'Manado, Tomohon, Bitung, Minahasa', sub: 'Sulawesi Utara Daratan', provinsi: 'Sulawesi Utara' },
+  DL: { wilayah: 'Sangihe, Talaud, Sitaro', sub: 'Kepulauan Nusa Utara', provinsi: 'Sulawesi Utara' },
+  DM: { wilayah: 'Gorontalo, Limboto, Pohuwato, Bone Bolango', sub: 'Gorontalo', provinsi: 'Gorontalo' },
+  DN: { wilayah: 'Palu, Donggala, Poso, Tolitoli, Luwuk Banggai', sub: 'Sulawesi Tengah', provinsi: 'Sulawesi Tengah' },
+  DT: { wilayah: 'Kendari, Bau-Bau, Konawe, Kolaka, Muna, Buton', sub: 'Sulawesi Tenggara', provinsi: 'Sulawesi Tenggara' },
+  DD: { wilayah: 'Makassar, Gowa, Maros, Pangkep, Takalar, Jeneponto, Bantaeng, Bulukumba, Selayar', sub: 'Sulawesi Selatan Selatan', provinsi: 'Sulawesi Selatan' },
+  DP: { wilayah: 'Parepare, Barru, Sidrap, Pinrang, Enrekang, Luwu, Palopo, Tana Toraja', sub: 'Sulawesi Selatan Utara', provinsi: 'Sulawesi Selatan' },
+  DW: { wilayah: 'Bone, Soppeng, Wajo, Sinjai', sub: 'Sulawesi Selatan Tengah', provinsi: 'Sulawesi Selatan' },
+  DC: { wilayah: 'Mamuju, Majene, Polewali Mandar, Pasangkayu, Mamasa', sub: 'Sulawesi Barat', provinsi: 'Sulawesi Barat' },
+  DE: { wilayah: 'Ambon, Maluku Tengah, Seram, Buru', sub: 'Kepulauan Maluku', provinsi: 'Maluku' },
+  DG: { wilayah: 'Ternate, Tidore, Halmahera', sub: 'Maluku Utara', provinsi: 'Maluku Utara' },
+  PA: { wilayah: 'Jayapura, Keerom, Sarmi', sub: 'Papua Induk', provinsi: 'Papua' },
+  PB: { wilayah: 'Manokwari, Sorong, Raja Ampat, Fakfak', sub: 'Papua Barat & Barat Daya', provinsi: 'Papua Barat' },
+};
